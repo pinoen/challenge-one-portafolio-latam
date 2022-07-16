@@ -8,6 +8,7 @@ en las secciones señaladas */
   --color-de-link: #000;
   --color-bg-secciones: #eaf2fd;
   --color-texto: #464646;
+  --color-hover: orangered;
 }
 
 body {
@@ -27,6 +28,9 @@ li {
 a {
   text-decoration: none;
   color: var(--color-de-link);
+}
+a:hover {
+  color: var(--color-hover);
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -64,6 +68,9 @@ section.menu {
 
 .menu__list__item:nth-child(6) a {
   font-weight: 700;
+}
+.menu__list__item:nth-child(6) a:hover {
+  color: olivedrab;
 }
 
 /*Sección Title*/
@@ -255,12 +262,30 @@ section.experience {
   background-color: #2a7ae4;
   border: none;
 }
+.experience__botao--demo:hover,
+.experiencia__botao--repo:hover {
+  transform: scale(0.95);
+  font-weight: 700;
+}
+
+.safety-experience {
+  font-size: 1.2rem;
+  border: 1.5px dashed orangered;
+  padding: 10px;
+}
+.safety-experience span {
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 /*Contacto*/
+.formcontato {
+  background-color: var(--color-bg-secciones);
+  padding: 130px 152px 65px 152px;
+}
 
 .formcontato__contacto {
   display: flex;
-  background-color: var(--color-bg-secciones);
 }
 .formcontato__img {
   width: 431px;
@@ -298,12 +323,18 @@ section.experience {
 
 /*footeer*/
 
-.footer {
+.footer__rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 102px;
   background-color: #fff;
-  text-align: center;
-  margin-top: 64px;
-  padding: 32px;
+  padding: 32px auto;
+  gap: 5px;
+}
+.footer__rodape p {
+  margin: 0;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
