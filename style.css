@@ -346,6 +346,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (max-width: 768px) {
   /* Header */
+  section.menu {
+    padding: 32px;
+  }
   .menu__header {
     gap: 50px;
   }
@@ -359,7 +362,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 
   /*title*/
   section.title {
-    padding: 32px;
+    padding: 0 32px;
+    margin-top: 0;
   }
   .menu {
     padding: 32px;
@@ -452,22 +456,119 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
-  /*Menu*/
+@media (max-width: 425px) {
+  /* Header */
+  section.menu {
+    padding: 16px;
+  }
+  .menu__list {
+    display: none;
+  }
+  .email-header {
+    display: flex;
+  }
+  /* Menú */
 
-  /*Titulo*/
-
-  /*Sección sobre mi*/
-
+  /*title*/
+  section.title {
+    padding: 0 16px;
+  }
+  .title__div {
+    flex-direction: column;
+  }
+  .menu {
+    padding: 16px;
+  }
+  .title__bio {
+    font-size: 1.375rem;
+  }
+  .title__profile {
+    width: 98px;
+  }
+  /* About */
+  section.about {
+    padding: 16px;
+    margin: 32px 0;
+  }
+  .about__title {
+    font-size: 1.375rem;
+  }
   /*Skills*/
+  .skills__title {
+    font-size: 1.375rem;
+  }
+
+  .skills__line {
+    padding: 16px;
+  }
+  .skills__box {
+    width: 156px;
+    height: 118px;
+  }
 
   /*Hobbies*/
+  .hobbies__title {
+    font-size: 1.375rem;
+  }
+
+  .hobbies__line {
+    padding: 16px;
+  }
+  .hobbies__box {
+    width: 156px;
+    height: 118px;
+  }
 
   /*Formación Académica*/
+  .academic__title {
+    font-size: 1.375rem;
+  }
+  .academic__courses {
+    padding: 16px;
+  }
+  .academic__courses__box {
+    flex-direction: column;
+    width: 296px;
+    height: 250px;
+  }
+  .academic__courses__item__img {
+    width: 224px;
+    height: 118px;
+  }
+  .academic__courses__item__img img {
+    width: 85px;
+  }
 
   /*Experiencia Profesional*/
+  .experience__section__title {
+    font-size: 1.375rem;
+  }
+  section.experience {
+    padding: 16px;
+  }
+  .experience__box {
+    flex-direction: column;
+  }
+  .experience__img {
+    max-width: 300px;
+    margin: 0;
+  }
+  .experience__box:nth-child(1),
+  .experience__box:nth-child(3),
+  .experience__box:nth-child(5),
+  .experience__box:nth-child(7),
+  .experience__box:nth-child(9) {
+    flex-direction: column;
+  }
+  /* Contacto */
+  .formcontato {
+    padding: 16px;
+  }
 
-  /*Contacto*/
-
-  /*Footer*/
+  .formcontato__contacto {
+    flex-direction: column;
+  }
+  .formcontato__img {
+    display: none;
+  }
 }
