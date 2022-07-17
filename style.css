@@ -56,7 +56,10 @@ section.menu {
 .menu__header {
   display: flex;
   align-items: center;
-  gap: 8px;
+}
+.email-header {
+  display: none;
+  font-weight: 700;
 }
 
 .menu__list {
@@ -341,18 +344,111 @@ section.experience {
 Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  /* Header */
+  .menu__header {
+    gap: 50px;
+  }
+  .menu__list {
+    display: none;
+  }
+  .email-header {
+    display: flex;
+  }
   /* Menú */
 
   /*title*/
-
+  section.title {
+    padding: 32px;
+  }
+  .menu {
+    padding: 32px;
+  }
+  .title__bio {
+    font-size: 1.375rem;
+  }
+  .title__profile {
+    width: 146px;
+    margin: 32px;
+  }
+  /* About */
+  section.about {
+    padding: 32px;
+    margin: 32px 0;
+  }
+  .about__title {
+    font-size: 1.375rem;
+  }
   /*Skills*/
+  .skills__title {
+    font-size: 1.375rem;
+  }
+
+  .skills__line {
+    padding: 32px;
+  }
 
   /*Hobbies*/
+  .hobbies__title {
+    font-size: 1.375rem;
+  }
+
+  .hobbies__line {
+    padding: 32px;
+  }
 
   /*Formación Académica*/
+  .academic__title {
+    font-size: 1.375rem;
+  }
+  .academic__courses {
+    padding: 32px;
+  }
+  .academic__courses__box {
+    flex-direction: column;
+    width: 224px;
+    height: 250px;
+  }
+  .academic__courses__item__img {
+    width: 224px;
+    height: 118px;
+  }
+  .academic__courses__item__img img {
+    width: 100px;
+  }
 
   /*Experiencia Profesional*/
+  .experience__section__title {
+    font-size: 1.375rem;
+  }
+  section.experience {
+    padding: 32px;
+  }
+  .experience__box {
+    flex-direction: column;
+  }
+  .experience__img {
+    max-width: 700px;
+    margin: 0;
+  }
+  .experience__box:nth-child(1),
+  .experience__box:nth-child(3),
+  .experience__box:nth-child(5),
+  .experience__box:nth-child(7),
+  .experience__box:nth-child(9) {
+    flex-direction: column;
+  }
+  /* Contacto */
+  .formcontato {
+    padding: 32px;
+  }
+
+  .formcontato__contacto {
+    flex-direction: column;
+  }
+  .formcontato__img {
+    display: none;
+  }
 }
 
 /*Mobile*/

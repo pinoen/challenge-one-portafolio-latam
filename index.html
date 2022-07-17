@@ -19,6 +19,7 @@
         <header class="menu__header">
             <img src="assets/vector.png">
             <h3 class="menu__title">Emilio Nicolás Pino</h3>
+            <a class="email-header" href="#contacto">pinoen@yahoo.com.ar</a>
         </header>
         <nav>
             <ul class="menu__list">
@@ -214,7 +215,7 @@
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profesional</h2>
+        <h2 class="experience__section__title" >Proyectos</h2>
         
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
@@ -239,7 +240,7 @@
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
                         <span class="experience__repo"><a href="https://github.com/pinoen/Ahorcado" target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="https://pinoen.github.io/Ahorcado/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__demo"><a href="https://pinoen.github.io/Ahorcado/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
@@ -351,10 +352,10 @@
                 <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                 <h3 class="formcontato__subtext">Si gustas podemos reunirnos en algún momento y te puedo dar más detalles sobre estos proyectos y otros en los que estoy trabajando actualmente. Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                 <form class="formcontato__form" name="form">
-                    <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                    <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                    <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
+                    <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
                     <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                 </form>
             </div>
