@@ -234,7 +234,7 @@ section.experience {
   display: flex;
 }
 .experience__img {
-  max-width: 752px;
+  max-width: 500px;
   margin-right: 16px;
 }
 .experience__box:nth-child(1),
@@ -430,9 +430,10 @@ Utiliza las referencias de los breakpoints @media abajo */
   }
   .experience__box {
     flex-direction: column;
+    align-items: center;
   }
   .experience__img {
-    max-width: 700px;
+    max-width: 500px;
     margin: 0;
   }
   .experience__box:nth-child(1),
@@ -548,9 +549,10 @@ Utiliza las referencias de los breakpoints @media abajo */
   }
   .experience__box {
     flex-direction: column;
+    align-items: center;
   }
   .experience__img {
-    max-width: 300px;
+    max-width: 200px;
     margin: 0;
   }
   .experience__box:nth-child(1),
