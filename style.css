@@ -303,6 +303,7 @@ section.experience {
 
 .formcontato__contacto {
   display: flex;
+  width: 100%;
 }
 .formcontato__img {
   width: 431px;
@@ -323,7 +324,7 @@ section.experience {
 .formcontato__form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 .formcontato__form .formcontato__input {
   height: 56px;
@@ -336,6 +337,15 @@ section.experience {
   color: #fff;
   background-color: #2a7ae4;
   border: none;
+}
+.error {
+  color: red;
+}
+.enviado {
+  display: block;
+  color: green;
+  font-size: 1.5rem;
+  padding-top: 16px;
 }
 
 /*footeer*/

@@ -411,14 +411,26 @@
                 <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                 <h3 class="formcontato__subtext">Si gustas podemos reunirnos en algún momento y te puedo dar más detalles sobre estos proyectos y otros en los que estoy trabajando actualmente. Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                 <form class="formcontato__form" name="form">
-                    <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
-                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
-                    <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off">
+                    <span class="error" id="errorNombre"></span>
+
+                    <input class="formcontato__input" type="email" name="email" id="email" placeholder="E-mail" autocomplete="off">
+                    <span class="error" id="errorEmail"></span>
+
+                    <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Asunto" autocomplete="off">
+                    <span class="error" id="errorAsunto"></span>
+
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                    <span class="error" id="errorMensaje"></span>
+
                     <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+
                 </form>
             </div>
+
         </div>
+        <span class="enviado"></span>
+
     </section>
 
     <!-- Sección de Footer -->
