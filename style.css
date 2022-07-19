@@ -146,6 +146,9 @@ section.about {
   height: 174px;
   background-color: #fff;
 }
+.skills__box:hover {
+  border: 1px solid var(--color-hover);
+}
 .skills__name {
   font-weight: 700;
   padding: 8px;
@@ -171,6 +174,10 @@ section.about {
   height: 174px;
   background-color: #fff;
 }
+.hobbies__box:hover {
+  border: 1px solid var(--color-hover);
+}
+
 .hobbies__name {
   font-weight: 700;
   padding: 8px;
@@ -214,6 +221,9 @@ section.about {
 .academic__courses__item__img img {
   width: 200px;
 }
+.academic__courses__item__img img:hover {
+  transform: scale(1.05);
+}
 .academic__courses__item__title {
   line-height: 1.625rem;
 }
@@ -235,8 +245,12 @@ section.experience {
 }
 .experience__img {
   max-width: 500px;
-  margin-right: 16px;
+  margin: 16px;
 }
+.experience__img:hover {
+  border: 1px solid var(--color-hover);
+}
+
 .experience__box:nth-child(1),
 .experience__box:nth-child(3),
 .experience__box:nth-child(5),
